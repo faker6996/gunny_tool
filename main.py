@@ -100,7 +100,7 @@ def calculate_output(event=None):  # Thêm `event` để hỗ trợ xử lý ph�
         input1 = int(entry1.get())
         input2 = float(entry2.get())
         
-        if input1 < 1 or input1 > 20 or input2 < 0 or input2 >= 10:
+        if input1 < 1 or input1 > 20 or input2 < -10 or input2 >= 10:
             raise ValueError("Đầu vào không hợp lệ!")
         
         result_text = ""
